@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.9.6 on win32)" generated="20211228 16:16:28.257" rpa="false" schemaversion="2">
+<suite id="s1" name="ValidaTextoPagina" source="C:\Users\halison.r.vitorino\git\Curso_robotframework_2\Tests\Google\FunctionalTests\ValidaTextoPagina.robot">
+<test id="s1-t1" name="A sample test case 2">
+<kw name="Start TestCase">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://ebay.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211228 16:16:28.583" level="INFO">Opening browser 'chrome' to base url 'http://ebay.com'.</msg>
+<status status="PASS" starttime="20211228 16:16:28.583" endtime="20211228 16:16:33.382"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211228 16:16:33.382" endtime="20211228 16:16:33.646"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>gh-ac</arg>
+<arg>iphone</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211228 16:16:33.647" level="INFO">Typing text 'iphone' into text field 'gh-ac'.</msg>
+<status status="PASS" starttime="20211228 16:16:33.647" endtime="20211228 16:16:33.809"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>gh-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211228 16:16:33.810" level="INFO">Clicking button 'gh-btn'.</msg>
+<status status="PASS" starttime="20211228 16:16:33.810" endtime="20211228 16:16:35.875"/>
+</kw>
+<status status="PASS" starttime="20211228 16:16:28.582" endtime="20211228 16:16:35.875"/>
+</kw>
+<kw name="Verify Text">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>iphone | eBay</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211228 16:16:35.988" level="INFO">Page title is 'iphone | eBay'.</msg>
+<status status="PASS" starttime="20211228 16:16:35.876" endtime="20211228 16:16:35.988"/>
+</kw>
+<status status="PASS" starttime="20211228 16:16:35.875" endtime="20211228 16:16:35.988"/>
+</kw>
+<kw name="Select Filter">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//body[1]/div[5]/div[6]/div[1]/div[1]/div[1]/div[2]/div[2]/span[1]/button[1]/span[1]/span[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211228 16:16:35.989" endtime="20211228 16:16:36.518"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//body[1]/div[5]/div[6]/div[1]/div[1]/div[1]/div[2]/div[2]/span[1]/button[1]/span[1]/span[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211228 16:16:36.519" level="INFO">Clicking element '//body[1]/div[5]/div[6]/div[1]/div[1]/div[1]/div[2]/div[2]/span[1]/button[1]/span[1]/span[1]'.</msg>
+<status status="PASS" starttime="20211228 16:16:36.518" endtime="20211228 16:16:36.591"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>(//input[@type='checkbox'])[102]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20211228 16:16:36.592" level="INFO">Selecting checkbox '(//input[@type='checkbox'])[102]'.</msg>
+<status status="PASS" starttime="20211228 16:16:36.591" endtime="20211228 16:16:38.692"/>
+</kw>
+<status status="PASS" starttime="20211228 16:16:35.989" endtime="20211228 16:16:38.692"/>
+</kw>
+<kw name="Verify Filter">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>//ul[@id='s0-14-11-6-3-query_answer1-answer-2-1-0-list']/li/div/a/div</arg>
+<arg>Usado</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20211228 16:16:38.721" level="INFO">Element '//ul[@id='s0-14-11-6-3-query_answer1-answer-2-1-0-list']/li/div/a/div' contains text 'Usado'.</msg>
+<status status="PASS" starttime="20211228 16:16:38.695" endtime="20211228 16:16:38.721"/>
+</kw>
+<status status="PASS" starttime="20211228 16:16:38.694" endtime="20211228 16:16:38.721"/>
+</kw>
+<kw name="Finish TestCase">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211228 16:16:38.721" endtime="20211228 16:16:41.033"/>
+</kw>
+<status status="PASS" starttime="20211228 16:16:38.721" endtime="20211228 16:16:41.033"/>
+</kw>
+<doc>This test verify a text in a page</doc>
+<tag>Functional</tag>
+<status status="PASS" starttime="20211228 16:16:28.582" endtime="20211228 16:16:41.034"/>
+</test>
+<status status="PASS" starttime="20211228 16:16:28.259" endtime="20211228 16:16:41.036"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Functional</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="ValidaTextoPagina">ValidaTextoPagina</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
