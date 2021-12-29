@@ -1,8 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
 
-*** Variables ***
-
 *** Test Cases ***
 A sample test case
     [documentation]   This test verify a login test

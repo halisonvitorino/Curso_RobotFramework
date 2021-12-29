@@ -8,14 +8,10 @@ Test Setup  Open WebPage
 Test Teardown  Finish TestCase
 
 *** Test Case ***
-Test Case 1
-    [documentation]   This test verify a text in a page
+Test Case 2
+    [documentation]   This test verify if a filter works
     [tags]  Functional
 
-    Valida Texto na Pagina Inicial
     Fill Search Field and Press Search Button
-    Verify Title Text in Search Results Page
-
-
-
-
+    Select Filter State of Product
+    Verify Filter State of Product Works
