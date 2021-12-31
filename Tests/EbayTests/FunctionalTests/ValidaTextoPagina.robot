@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation  Basic Search Tests
 Resource  ../../../Resources/Keywords/CommonKeywords.robot
-Resource  ../../../Resources/PageObjects/LandingPage.robot
+Resource  ../../../Resources/PageObjects/HomePage.robot
 Resource  ../../../Resources/PageObjects/SearchResultsPage.robot
 
 Test Setup  Open WebPage

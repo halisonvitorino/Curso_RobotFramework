@@ -1,12 +1,15 @@
 *** Settings ***
 Library  SeleniumLibrary
+Variables  ../WebElements.py
 
 *** Keywords ***
 Verify Title Text in Search Results Page
-    title should be  iphone | eBay
+    [Arguments]  ${tituloNaPagina}
+    title should be  ${tituloNaPagina}
 Select Filter State of Product
-    click element   xpath=//div[2]/span/button/span/span
-    select checkbox  (//input[@type='checkbox'])[102]
+    click element  ${SearchResultsPageMenuEstado}
+    select checkbox  ${SearchResultsPageMenuEstadoCheckBox_Usado}
 Verify Filter State of Product Works
-    Element Should Contain  //ul[@id='s0-14-11-6-3-query_answer1-answer-2-1-0-list']/li/div/a/div  Usado
+    [Arguments]  ${checkboxSelecionado}
+    Element Should Contain  ${SearchResultsPageMenuEstado_Tag_Usado}  ${checkboxSelecionado}
 

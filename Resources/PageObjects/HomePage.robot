@@ -1,9 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
-
-*** Variables ***
-${CampoBuscar}  gh-ac
-${BotaoBuscar}  gh-btn
+Variables  ../WebElements.py
 
 *** Keywords ***
 Valida Texto na Pagina Inicial
@@ -12,8 +9,8 @@ Valida Texto na Pagina Inicial
 
 Fill Search Field and Press Search Button
     [Arguments]  ${produto}
-    input text  ${CampoBuscar}  ${produto}
-    click button  ${BotaoBuscar}
+    input text  ${HomePageCampoBuscar}  ${produto}
+    click button  ${HomePageBotaoBuscar}
 
 Valida Busca Realizada
     [Arguments]  ${produto}
