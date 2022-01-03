@@ -1,13 +1,18 @@
 *** Settings ***
+Documentation  Arquivo com keywords e variaveis que podem ser reutilizadas em todos os testes
 Library  SeleniumLibrary
 
 *** Variables ***
-${browser}  chrome
-${url}  http://ebay.com
+${browserChrome}  chrome
+${urlEbay}  http://ebay.com
+${urlOpencart}  https://www.opencart.com
+${usuarioValidoOpencart}  halisonvitorino@gmail.com
+${usuarioInvalidoOpencart}  1234567
+${senhaValidaOpencart}  12345678
 
 *** Keywords ***
 Open WebPage
-    open browser  ${url}  ${browser}
+    open browser  ${urlEbay}  ${browserChrome}
     maximize browser window
 
 Finish TestCase

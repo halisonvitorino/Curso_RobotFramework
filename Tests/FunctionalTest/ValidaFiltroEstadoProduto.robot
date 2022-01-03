@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation  Basic Search Tests
-Resource  ../../../Resources/Keywords/CommonKeywords.robot
-Resource  ../../../Resources/PageObjects/HomePage.robot
-Resource  ../../../Resources/PageObjects/SearchResultsPage.robot
+Resource  ${EXECDIR}/Resources/Keywords/CommonKeywords.robot
+Resource  ${EXECDIR}/Resources/PageObjects/HomePageEbay.robot
+Resource  ${EXECDIR}/Resources/PageObjects/SearchResultsPage.robot
 
 Test Setup  Open WebPage
 Test Teardown  Finish TestCase
