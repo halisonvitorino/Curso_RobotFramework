@@ -3,12 +3,12 @@ Documentation  Arquivo com keywords e variaveis que podem ser reutilizadas em to
 Library  SeleniumLibrary
 
 *** Variables ***
-${browserChrome}  chrome
-${urlEbay}  http://ebay.com
-${urlOpencart}  https://www.opencart.com
-${usuarioValidoOpencart}  halisonvitorino@gmail.com
+${browserChrome}            chrome
+${urlEbay}                  http://ebay.com
+${urlOpencart}              https://www.opencart.com
+${usuarioValidoOpencart}    halisonvitorino@gmail.com
 ${usuarioInvalidoOpencart}  1234567
-${senhaValidaOpencart}  12345678
+${senhaValidaOpencart}      12345678
 
 *** Keywords ***
 Open WebPage

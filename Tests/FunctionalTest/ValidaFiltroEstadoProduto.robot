@@ -8,7 +8,7 @@ Test Setup  Open WebPage
 Test Teardown  Finish TestCase
 
 *** Variables ***
-@{produto}  iphone  samsung  motorola  lg
+@{produto}         iphone  samsung  motorola  lg
 ${tituloNaPagina}  motorola | eBay
 ${checkbox_usado}  Usado
 
